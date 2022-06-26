@@ -547,7 +547,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1047,4 +1047,13 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+
+img.zoom {
+  transition: transform .5s; /* Animation */
+  margin: 0 auto;
+}
+
+img.zoom:hover {
+  transform: translate(0px, -15px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
